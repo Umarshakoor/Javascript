@@ -22,9 +22,11 @@ async function fetchData() {
         }
 
         const data = await response.json();
-        console.log(data)
-        const pokemonSprite = data.sprites.front_defualt;
+        console.log('data', data.sprites.front_default)
+        const pokemonSprite = data.sprites.front_default;
+        console.log('pokemonSprite', pokemonSprite);
         const imgElement = document.getElementById("pokemonSprite");
+        console.log('img', imgElement);
 
         imgElement.src = pokemonSprite
         imgElement.style.display = "block";
@@ -33,3 +35,10 @@ async function fetchData() {
         console.log(error);
     }
 }
+
+
+
+
+
+
+

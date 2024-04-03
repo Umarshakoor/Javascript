@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+* {
+  background-color: rgb(235, 207, 170);
+}
+.img {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
