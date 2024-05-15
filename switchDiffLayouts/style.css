@@ -1,0 +1,61 @@
+/* Base styles */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+aside,
+footer {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Layout 1 styles (default) */
+
+.content {
+  width: 70%;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  float: right;
+}
+
+/* Layout 2 styles */
+
+.layout2 .content {
+  width: 100%;
+  float: none;
+}
+
+.layout2 aside {
+  margin-top: 20px;
+}
+
+/* Style switcher styles */
+
+#style-switcher {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+#style-switcher button {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

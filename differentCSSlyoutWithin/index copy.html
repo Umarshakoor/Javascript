@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Switcher</title>
+    <style>
+        /* Default styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Additional styles for different layouts */
+        .layout-2 .container {
+            background-color: #e6e6e6;
+        }
+
+        .layout-3 .container {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+
+<body class="layout-1">
+    <div class="container">
+        <h1>Layout Switcher</h1>
+        <p>This is Layout 1.</p>
+        <button onclick="changeLayout(1)">Layout 1</button>
+        <button onclick="changeLayout(2)">Layout 2</button>
+        <button onclick="changeLayout(3)">Layout 3</button>
+    </div>
+    <script>
+        function changeLayout(layoutNumber) {
+            const body = document.body;
+            body.className = `layout-${layoutNumber}`;
+        }
+    </script>
+</body>
+
+</html>

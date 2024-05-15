@@ -1,16 +1,3 @@
-/* fetch("https://pokeapi.co/api/v2/pokemon/blastoise")
-    .then(Response => {
-        if (!Response.ok) {
-            throw new Error("HTTP error " + Response.status);
-        }
-        return Response.json();
-    })
-    .then(json => {
-        console.log(json);
-    })
-    .catch(error => {
-        console.error(error);
-    }); */
 fetchData();
 async function fetchData() {
     try {
