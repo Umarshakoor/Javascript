@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function PassProps(props) {
   return (
     <div>
@@ -5,5 +7,9 @@ function PassProps(props) {
     </div>
   );
 }
+
+PassProps.propTypes = {
+  name: PropTypes.string.isRequired,
+};
 
 export default PassProps;
